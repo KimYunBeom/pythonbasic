@@ -1,18 +1,26 @@
-python = "Python is Amazing"
-print(python.lower())
-print(python.upper())
-print(python[0].isupper())
-print(len(python))
-print(python.replace("Python", "Java"))
+# print("a" + "b")
+# print("a", "b")
 
-index = python.index("n")
-print(index)
+# # 방법 1
+# print("나는 %d살입니다." % 20)
+# print("나는 %s을 좋아해요." % "파이썬")
+# print("Apple은 %c로 시작해요." % "A")
 
-index = python.index("n", index + 1)
-print(index)
+# # %s
+# print("나는 %s살입니다." % 20)
+# print("나는 %s색과 %s색을 좋아해요." % ("파란", "빨간"))
 
-print(python.find("Java"))
-# print(python.index("Java"))
-print("hi")
+# # 방법 2
+# print("나는 {}살입니다.".format(20))
+# print("나는 {}색과 {}색을 좋아해요.".format("파란", "빨간"))
+# print("나는 {0}색과 {1}색을 좋아해요.".format("파란", "빨간"))
+# print("나는 {1}색과 {0}색을 좋아해요.".format("파란", "빨간"))
 
-print(python.count("n"))
+# 방법 3
+# print("나는 {age}살이며, {color}색을 좋아해요.".format(age = 20, color="빨간"))
+# print("나는 {age}살이며, {color}색을 좋아해요.".format(color="빨간", age = 20))
+
+# 방법 4 (v3.6 이상~)
+age = 20
+color = "빨간"
+print(f"나는 {age}살이며, {color}색을 좋아해요.")
