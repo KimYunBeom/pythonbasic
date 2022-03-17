@@ -1,17 +1,6 @@
-print(2 + 3 * 4) # 14
-print((2 + 3) * 4) # 20
-number = 2 + 3 * 4 # 14
-print(number)
-number = number + 2 # 16
-print(number)
-number += 2 # 18
-print(number)
-number *= 2 # 36
-print(number)
-number /= 2 # 18
-print(number)
-number -= 2 # 16
-print(number)
-
-number %= 5 # 0
-print(number)
+print(abs(-5)) # 5
+print(pow(4, 2)) # 4^2 = 4*4 = 16
+print(max(5, 12)) # 12
+print(min(5, 12)) # 5
+print(round(3.14)) # 3
+print(round(4.99)) # 5
