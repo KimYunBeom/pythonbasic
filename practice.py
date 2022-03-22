@@ -1,30 +1,29 @@
-'''
-Quiz) 표준 체중을 구하는 프로그램을 작성하시오
-* 표준 체중 : 각 개인의 키에 적당한 체중
-(성별에 따른 공식)
-남자 : 키(m) x 키(m) x 22
-여자 : 키(m) x 키(m) x 21
+# print('Python', 'Java', sep=',')
 
-조건1 : 표준 체중은 별도의 함수 내에서 계산
-      * 함수명 : std_weight
-      * 전달값 : 키(height), 성별(gender)
-조건2 : 표준 체중은 소수점 둘째자리까지 표시
+# print('Python', 'Java', 'JavaScript', sep=' vs ')
 
-(출력 예제)
-키 175cm 남자의 표준 체중은 67.38kg 입니다.
-'''
+# print('Python', 'Java', 'JavaScript', sep=',', end='?') # sep : 구분자 처리, end : 끝부분 처리
+# print('무엇이 더 재미있을까요?')
 
-def std_weight(height, gender): # 키는 m 단위(실수), 성별 '남자' / '여자'
-  flag = 0
-  if gender == '남자': 
-    flag = 22
-  else: 
-    flag = 21
+# import sys
+# print('Python', 'Java', file=sys.stdout)
+# print('Python', 'Java', file=sys.stderr)
 
-  return height * height * flag
+# # 시험 성적
+# scores = {"수학" : 0, "영어" : 50, "코딩" : 100}
+# # .items()로 파라미터1에 키, 파라미터2에 값을 추출
+# for subject, score in scores.items(): 
+#   # print(subject, score)
+#   # ljust(8) : 8개 공간 확보 후, 왼쪽 정렬하여 글자를 출력
+#   # rjust(4) : 4개 공간 확보 후, 오른쪽 정렬하여 글자를 출력
+#   print(subject.ljust(8), str(score).rjust(4), sep=':') 
 
-height = 175 # cm 단위
-gender = '남자'
-weight = round(std_weight(height / 100, gender), 2)
+# # 은행 대기순번표
+# # 001, 002, 003, ...
+# # .zfill(3) : 3개 공간 확보 후, 남은 공간에 0을 채움
+# for num in range(1, 21): 
+#   print('대기번호 : ' + str(num).zfill(3))
 
-print("키 {0}cm {1}의 표준 체중은 {2}kg 입니다." .format(height, gender, weight))
+# input()은 항상 str을 return
+answer = input('아무 값이나 입력하세요 : ')
+print('입력하신 값은 ' + str(answer) + '입니다.')
