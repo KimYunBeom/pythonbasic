@@ -1,14 +1,11 @@
-import pickle
+# import pickle
+# with open('profile.pickle', 'rb') as profile_file:
+#   print(pickle.load(profile_file))
 
-# write binary
-# profile_file = open('profile.pickle', 'wb')
-# profile = {"이름":"박명수", "나이":30, "취미": ["축구", "골프", "코딩"]}
-# print(profile)
-# pickle.dump(profile, profile_file) # 변수 정보를 파일에 저장
-# profile_file.close()
+# write
+# with open('study.txt', 'w', encoding='utf8') as study_file:
+#   study_file.write('파이썬을 열심히 공부하고 있어요')
 
-# read binary
-profile_file = open('profile.pickle', 'rb')
-profile = pickle.load(profile_file) # 파일의 정보를 변수에 불러오기
-print(profile)
-profile_file.close()
+# read
+with open('study.txt', 'r', encoding='utf8') as study_file:
+  print(study_file.read())
