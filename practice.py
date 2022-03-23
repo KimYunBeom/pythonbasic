@@ -1,29 +1,26 @@
-# print('Python', 'Java', sep=',')
+# 빈 자리는 빈 공간으로 두고, 오른쪽 정렬을 하되, 총 10자리 공간을 확보
+# print("{0: >10}".format(500))
 
-# print('Python', 'Java', 'JavaScript', sep=' vs ')
+# 양수일 땐 +로 표시, 음수일 땐 -로 표시
+# print("{0: >+10}".format(500))
+# print("{0: >+10}".format(-500))
 
-# print('Python', 'Java', 'JavaScript', sep=',', end='?') # sep : 구분자 처리, end : 끝부분 처리
-# print('무엇이 더 재미있을까요?')
+# 왼쪽 정렬하고, 빈칸으로 _로 채움
+# print("{0:_<10}".format(500))
 
-# import sys
-# print('Python', 'Java', file=sys.stdout)
-# print('Python', 'Java', file=sys.stderr)
+# 3자리 마다 콤마를 찍어주기
+# print("{0:,}".format(100000000000))
 
-# # 시험 성적
-# scores = {"수학" : 0, "영어" : 50, "코딩" : 100}
-# # .items()로 파라미터1에 키, 파라미터2에 값을 추출
-# for subject, score in scores.items(): 
-#   # print(subject, score)
-#   # ljust(8) : 8개 공간 확보 후, 왼쪽 정렬하여 글자를 출력
-#   # rjust(4) : 4개 공간 확보 후, 오른쪽 정렬하여 글자를 출력
-#   print(subject.ljust(8), str(score).rjust(4), sep=':') 
+# 3자리 마다 콤마를 찍어주기, +- 부호도 붙이기
+# print("{0:+,}".format(100000000000))
+# print("{0:+,}".format(-100000000000))
 
-# # 은행 대기순번표
-# # 001, 002, 003, ...
-# # .zfill(3) : 3개 공간 확보 후, 남은 공간에 0을 채움
-# for num in range(1, 21): 
-#   print('대기번호 : ' + str(num).zfill(3))
+# 3자리 마다 콤마를 찍어주기, +- 부호도 붙이고, 자릿수 확보하기
+# 돈이 많으면 행복하니까 빈 자리는 ^ 로 채워주기
+# print("{0:^<+30,}".format(100000000000))
 
-# input()은 항상 str을 return
-answer = input('아무 값이나 입력하세요 : ')
-print('입력하신 값은 ' + str(answer) + '입니다.')
+# 소수점 출력
+print("{0:f}".format(5/3))
+
+# 소수점 특정 자리수까지만출력 (소수점 3째 자리에서 반올림)
+print("{0:.2f}".format(5/3))
