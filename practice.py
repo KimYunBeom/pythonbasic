@@ -49,16 +49,7 @@ class FlyableAttackUnit(AttackUnit, Flyable):
 # 건물
 class BuildingUnit(Unit):
   def __init__(self, name, hp, location):
-      pass
+    Unit.__init__(self, name, hp, location)
+    super().__init__(name, hp, location) # super()는 파라미터 self 제외 필수
+    self.location = location
 
-# 서플라이 디폿 : 건물, 1개 건물 = 8 유닛
-supply_depot = BuildingUnit('서플라이 디폿', 500, '7시')
-
-def game_start():
-  print('[알림] 새로운 게임을 시작합니다.')
-
-def game_over():
-  pass
-
-game_start()
-game_over()
