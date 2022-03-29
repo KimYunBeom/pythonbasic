@@ -1,24 +1,8 @@
-# import travel.thailand
-# import travel.thailand.ThailandPackage # 사용 불가
-# trip_to = travel.thailand.ThailandPackage()
-# trip_to.detail()
+from bs4 import BeautifulSoup
+soup = BeautifulSoup("<p>Some<b>bad<i>HTML")
+print(soup.prettify())
 
-# from travel.thailand import ThailandPackage
-# trip_to = ThailandPackage()
-# trip_to.detail()
-
-# from travel import vietnam
-# trip_to = vietnam.VietnamPackage()
-# trip_to.detail()
-
-# from random import *
-from travel import *
-# # trip_to = vietnam.VietnamPackage()
-trip_to = thailand.ThailandPackage()
-trip_to.detail()
-
-import inspect
-# import random
-# print(inspect.getfile(random))
-
-print(inspect.getfile(thailand))
+# $ pip list
+# $ pip show beautifulsoup4
+# $ pip install --upgrade beautifulsoup4
+# $ pip uninstall beautifulsoup4
